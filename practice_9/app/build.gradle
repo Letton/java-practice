@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation libs.junit.jupiter
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation libs.guava
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'org.example.App'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': application.mainClass
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+
+task copyJar(type: Copy) {
+    dependsOn jar
+    from jar.archivePath
+    into '../docker'
+}
+
+task buildDocker(type: Exec) {
+    dependsOn copyJar
+    commandLine 'docker', 'build', '-t', 'my-java-app', '../docker'
+}
+
+task runDockerContainer(type: Exec) {
+    dependsOn buildDocker
+    commandLine 'docker', 'run', '--rm', 'my-java-app'
+}

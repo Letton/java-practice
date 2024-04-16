@@ -19,7 +19,5 @@ public class Main {
     executorService.awaitTermination(1, TimeUnit.MINUTES);
 
     System.out.println("All tasks done");
-
-    executorService.close();
   }
 }
