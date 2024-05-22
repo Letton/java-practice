@@ -1,9 +1,7 @@
-package org.example.practice_15.model;
-
+package org.example.practice_15.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
@@ -11,6 +9,8 @@ import java.time.LocalDate;
 @Table(name = "games")
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,5 +21,10 @@ public class Game {
 
     @Column(name = "creation_date")
     private LocalDate creationDate;
+
+    @Override
+    public String toString() {
+        return "Game [id=" + id + ", name=" + name + "]";
+    }
 }
 

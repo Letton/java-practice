@@ -1,31 +1,35 @@
-package org.example.practice_14.controllers;
+package org.example.practice_15.controllers;
 
-import jakarta.servlet.http.HttpServletRequest;
-import org.example.practice_14.GameAuthor;
+import org.example.practice_15.dao.GameAuthorDAO;
+import org.example.practice_15.models.GameAuthor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping("/authors")
 public class GameAuthorController {
-    private final List<GameAuthor> authors = new ArrayList<>();
+
+    private final GameAuthorDAO gameAuthorDAO;
+
+    @Autowired
+    public GameAuthorController(GameAuthorDAO gameAuthorDAO) {
+        this.gameAuthorDAO = gameAuthorDAO;
+    }
 
     @PostMapping
-    public void createAuthor(@RequestBody GameAuthor author) {
-        authors.add(author);
+    public void createGame(@RequestBody GameAuthor gameAuthor) {
+        gameAuthorDAO.save(gameAuthor);
     }
 
     @DeleteMapping("/{index}")
-    public void deleteAuthor(@PathVariable int index) {
-        if (index >= 0 && index < authors.size()) {
-            authors.remove(index);
-        }
+    public void deleteGame(@PathVariable int index) {
+        gameAuthorDAO.delete(index);
     }
 
     @GetMapping
-    public List<GameAuthor> getAllAuthors() {
-        return authors;
+    public List<GameAuthor> getAllGames() {
+        return gameAuthorDAO.index();
     }
 }

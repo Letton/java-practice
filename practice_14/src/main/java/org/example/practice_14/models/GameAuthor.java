@@ -1,19 +1,18 @@
-package org.example.practice_14.dto;
+package org.example.practice_14.models;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 public class GameAuthor {
     private String nickname;
-    private LocalDate birthDate;
+    private Date birthDate;
 
-    public GameAuthor() {
-
-    }
-
-    public GameAuthor(String nickname, LocalDate birthDate) {
+    public GameAuthor(String nickname, Date birthDate) {
         this.nickname = nickname;
         this.birthDate = birthDate;
     }
+
+    public GameAuthor() {}
 
     public String getNickname() {
         return nickname;
@@ -23,11 +22,11 @@ public class GameAuthor {
         this.nickname = nickname;
     }
 
-    public LocalDate getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 }

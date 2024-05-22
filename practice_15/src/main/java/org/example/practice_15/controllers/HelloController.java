@@ -1,4 +1,4 @@
-package org.example.practice_14.controllers;
+package org.example.practice_15.controllers;
 
 
 import org.springframework.stereotype.Controller;
