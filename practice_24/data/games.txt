@@ -2,6 +2,3 @@ Game{id=1, name='New Game', creationDate=2023-05-21, author=Qwert}
 Game{id=2, name='Game2', creationDate=2024-05-16, author=Asd3}
 Game{id=3, name='QWQWQWQ', creationDate=2023-05-21, author=Qwert}
 Game{id=4, name='asdasdQWQWQWQ', creationDate=2023-05-21, author=Qwert}
-Game{id=5, name='asdasdQWQWdfgsdfgsdfgsdfQWQ', creationDate=2023-05-21, author=Qwert}
-Game{id=6, name='asdasdQWQWdfgsdfgsdfgsdfQWQ', creationDate=2023-05-21, author=Qwert}
-Game{id=7, name='asdQWQWQWQ', creationDate=2023-05-21, author=Qwert}

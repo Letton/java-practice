@@ -1,0 +1,2 @@
+GameAuthor{id=1, nickname='Qwert', birthDate=1990-01-01}
+GameAuthor{id=3, nickname='Asd3', birthDate=2024-05-16}

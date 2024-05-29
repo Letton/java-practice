@@ -220,63 +220,65 @@
                 – HikariPool-1 - Shutdown initiated...
 97450 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Shutdown completed.
-533  [main] INFO  r.l.p.Practice16Application
-                – Starting Practice16Application using Java 21.0.3 with PID 11100 (C:\Users\Letton\Desktop\java-practice\practice_19\build\classes\java\main started by Letton in C:\Users\Letton\Desktop\java-practice\practice_19)
-534  [main] INFO  r.l.p.Practice16Application
+690  [main] INFO  r.l.p.Practice16Application
+                – Starting Practice16Application using Java 21.0.3 with PID 20396 (C:\Users\Letton\Documents\java-practice\practice_20\build\classes\java\main started by Letton in C:\Users\Letton\Documents\java-practice\practice_20)
+692  [main] INFO  r.l.p.Practice16Application
                 – No active profile set, falling back to 1 default profile: "default"
-997  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+1318 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
                 – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1036 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
-                – Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
-1395 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+1369 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+1980 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
                 – Tomcat initialized with port 8080 (http)
-1403 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+1990 [main] INFO  o.a.coyote.http11.Http11NioProtocol
                 – Initializing ProtocolHandler ["http-nio-8080"]
-1404 [main] INFO  o.a.catalina.core.StandardService
+1991 [main] INFO  o.a.catalina.core.StandardService
                 – Starting service [Tomcat]
-1404 [main] INFO  o.a.catalina.core.StandardEngine
+1991 [main] INFO  o.a.catalina.core.StandardEngine
                 – Starting Servlet engine: [Apache Tomcat/10.1.20]
-1446 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+2047 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
                 – Initializing Spring embedded WebApplicationContext
-1446 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
-                – Root WebApplicationContext: initialization completed in 876 ms
-1559 [main] INFO  o.h.jpa.internal.util.LogHelper
+2047 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1323 ms
+2210 [main] INFO  o.h.jpa.internal.util.LogHelper
                 – HHH000204: Processing PersistenceUnitInfo [name: default]
-1603 [main] INFO  org.hibernate.Version
+2278 [main] INFO  org.hibernate.Version
                 – HHH000412: Hibernate ORM core version 6.4.4.Final
-1629 [main] INFO  o.h.c.i.RegionFactoryInitiator
+2310 [main] INFO  o.h.c.i.RegionFactoryInitiator
                 – HHH000026: Second-level cache disabled
-1857 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+2568 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
                 – No LoadTimeWeaver setup: ignoring JPA class transformer
-1883 [main] INFO  com.zaxxer.hikari.HikariDataSource
+2596 [main] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Starting...
-2010 [main] INFO  com.zaxxer.hikari.pool.HikariPool
-                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12f9f896
-2011 [main] INFO  com.zaxxer.hikari.HikariDataSource
+2763 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ea07516
+2765 [main] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Start completed.
-2912 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+3658 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
                 – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2987 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+3754 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
                 – Initialized JPA EntityManagerFactory for persistence unit 'default'
-3297 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+4185 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
                 – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-3571 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+4572 [main] INFO  o.a.coyote.http11.Http11NioProtocol
                 – Starting ProtocolHandler ["http-nio-8080"]
-3583 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+4584 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
                 – Tomcat started on port 8080 (http) with context path ''
-3590 [main] INFO  r.l.p.Practice16Application
-                – Started Practice16Application in 3.316 seconds (process running for 4.153)
-33771 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+4590 [main] INFO  r.l.p.Practice16Application
+                – Started Practice16Application in 4.233 seconds (process running for 5.042)
+9420 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
                 – Initializing Spring DispatcherServlet 'dispatcherServlet'
-33771 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+9420 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
                 – Initializing Servlet 'dispatcherServlet'
-33772 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+9421 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
                 – Completed initialization in 1 ms
-33803 [http-nio-8080-exec-1] INFO  r.l.p.services.FilterService
+9455 [http-nio-8080-exec-1] INFO  r.l.p.services.FilterService
                 – Filter Game
-46838 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+9566 [http-nio-8080-exec-1] INFO  r.l.p.aspects.LoggingAspect
+                – List ru.letton.practice_16.services.FilterService.filterGames(String,LocalDate,Integer) executed in 111 ms
+1502367 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
                 – Closing JPA EntityManagerFactory for persistence unit 'default'
-46840 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+1502369 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Shutdown initiated...
-46842 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+1502371 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Shutdown completed.
